@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+  <title>Adarsh Vimal Singh's Profile</title>
+  <style>
+    /* Body Styling with Background */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(45deg, #ffb6c1, #ff6f61, #ffeb3b);
+      background-size: 300% 300%;
+      animation: gradientBG 15s ease infinite;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Main Container Style */
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+    }
+
+    /* Title and Headings */
+    h1 {
+      font-size: 2.8rem;
+      color: #2c3e50;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    h2 {
+      color: #e74c3c;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    /* Profile Image Styling */
+    .profile-img {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .profile-img img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+      object-fit: cover;
+    }
+
+    /* Paragraph and List Styling */
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #e74c3c;
+      text-decoration: underline;
+    }
+
+    /* Horizontal Line */
+    hr {
+      border: none;
+      height: 2px;
+      background: #e74c3c;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+
+    /* Contact Info and Buttons */
+    p a {
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    /* Form Styling */
+    form {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Media Query for Mobile */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      p, li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Profile Image Section -->
+    <div class="profile-img">
+      <img src="adarsh.jpeg" alt="Adarsh's Photo">
+    </div>
+
+    <h1>👋 Hello, I'm Adarsh Vimal Singh</h1>
+    <p><strong>Student | Developer | Gamer</strong></p>
+
+    <hr>
+
+    <!-- About Me Section -->
+    <h2>📚 About Me</h2>
+    <p>Hello! I'm Adarsh — a guy who’s figuring things out one day at a time. I enjoy going to the gym, listening to music (especially when I need to escape reality), and yeah, sometimes I code too.</p>
+    <p>I’m not a pro developer (yet), but I like exploring how websites work and creating things that actually show up on the screen. I started learning HTML, CSS, and C++ recently — mostly by experimenting and watching random tutorials late at night.</p>
+    <p>For me, coding is like the gym — tough in the beginning, but addictive once you get into it. And trust me, that “code successfully ran” feeling hits harder than a PR lift.</p>
+    <p>Still learning, still vibing. Let’s see where this journey takes me!</p>
+
+    <!-- Skills Section -->
+    <h2>🎯 Skills</h2>
+    <ul>
+      <li><strong>HTML</strong> - Building solid structures for websites</li>
+      <li><strong>CSS</strong> - Styling websites with beautiful designs</li>
+      <li><strong>JavaScript</strong> - Adding interactivity to websites (basic)</li>
+      <li><strong>C++</strong> - Problem-solving and algorithm design</li>
+      <li><strong>Python</strong> - Data analysis and automation</li>
+      <li><strong>DSA</strong> - Data Structures and Algorithms</li>
+      <li><strong>MySQL</strong> - Database management and queries</li>
+    </ul>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <h2>📞 Get in Touch</h2>
+    <form action="mailto:58adarshvimalsingh@gmail.com" method="POST" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Your Email">
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required placeholder="Subject">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <hr>
+
+    <!-- Additional Contact Info -->
+    <p>Email: <a href="mailto:58adarshvimalsingh@gmail.com">58adarshvimalsingh@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/adarsh985" target="_blank">github.com/adarsh985</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/adarsh-singh-8849162b8/" target="_blank">linkedin.com/in/adarsh-singh</a></p>
+  </div>
+
+</body>
+</html>

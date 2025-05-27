@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Display and Combinator Questions - 2nd May 2025</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+      color: #333;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-left: 4px solid #999;
+      overflow-x: auto;
+    }
+    .question {
+      margin-bottom: 40px;
+    }
+    .example {
+      margin-top: 10px;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+    .inline {
+      display: inline;
+      background: lightgreen;
+      padding: 5px;
+    }
+    .block {
+      display: block;
+      background: lightblue;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    .inline-block {
+      display: inline-block;
+      background: orange;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 50px;
+      margin: 5px;
+    }
+    div span {
+      background: #ffebcd;
+    }
+    ul > li {
+      color: green;
+    }
+    h3 + p {
+      color: blue;
+    }
+    h3 ~ p {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Practical Questions – 2nd May 2025</h1>
+
+  <div class="question">
+    <h2>Q1: How does display: inline differ from display: block?</h2>
+    <!-- Inline elements do not start on a new line and only take as much width as needed.
+         Block elements start on a new line and take up the full width. -->
+    <div class="example">
+      <span class="inline">Inline 1</span>
+      <span class="inline">Inline 2</span>
+      <div class="block">Block 1</div>
+      <div class="block">Block 2</div>
+    </div>
+    <pre><code>
+/* Inline: flows horizontally, width based on content */
+.inline {
+  display: inline;
+  background: lightgreen;
+}
+
+/* Block: starts on new line, takes full width */
+.block {
+  display: block;
+  background: lightblue;
+}
+    </code></pre>
+  </div>
+
+  <div class="question">
+    <h2>Q2: What does display: inline-block do, and how is it different from inline and block?</h2>
+    <!-- Inline-block allows elements to sit inline but still accept width/height.
+         Unlike inline, it allows box-model styling like block but stays inline. -->
+    <div class="example">
+      <span class="inline-block">One</span>
+      <span class="inline-block">Two</span>
+      <span class="inline-block">Three</span>
+    </div>
+    <pre><code>
+/* Inline-block: flows inline but accepts width/height */
+.inline-block {
+  display: inline-block;
+  background: orange;
+  width: 100px;
+  height: 50px;
+}
+    </code></pre>
+  </div>
+
+  <div class="question">
+    <h2>Q3: What is the default display value for &lt;div&gt;, &lt;span&gt;, and &lt;p&gt; elements?</h2>
+    <!-- <div> and <p> are block by default.
+         <span> is inline by default. -->
+    <div class="example">
+      <div class="block">This is a div (block)</div>
+      <p class="block">This is a p (block)</p>
+      <span class="inline">This is a span (inline)</span>
+    </div>
+    <pre><code>
+/* Defaults:
+   div     => block
+   p       => block
+   span    => inline */
+    </code></pre>
+  </div>
+
+  <div class="question">
+    <h2>Q4: What are combinators in CSS?</h2>
+    <!-- Combinators are used to target elements based on relationships:
+         Descendant (A B), Child (A > B), Adjacent (A + B), General Sibling (A ~ B) -->
+    <div class="example">
+      <div>
+        <span>This span is inside a div (descendant)</span>
+      </div>
+      <ul>
+        <li>Direct child of ul</li>
+        <ol><li>Not a child of ul</li></ol>
+      </ul>
+      <h3>Heading</h3>
+      <p>This is adjacent sibling (blue)</p>
+      <p>This is general sibling (italic)</p>
+    </div>
+    <pre><code>
+/* Descendant */
+div span {
+  background: #ffebcd;
+}
+
+/* Child */
+ul > li {
+  color: green;
+}
+
+/* Adjacent Sibling */
+h3 + p {
+  color: blue;
+}
+
+/* General Sibling */
+h3 ~ p {
+  font-style: italic;
+}
+    </code></pre>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City and Notes Demo</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  .city {
+    background-color: tomato;
+    color: white;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  .city h2 {
+    margin-top: 0;
+  }
+  .note {
+    font-size: 110%;
+    color: darkred;
+    font-weight: bold;
+    background: #ffe9e9;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .main {
+    font-style: italic;
+    color: #555;
+  }
+  .highlight {
+    background: #fff8dc;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-left: 4px solid orange;
+    border-radius: 5px;
+  }
+</style>
+</head>
+
+<body>
+
+<h1 class="main">City Explorer</h1>
+
+<div class="city">
+  <h2>Australia </h2>
+  <p>The capital of Australia is <span class="note">Canberra</span>.</p>
+</div>
+
+<div class="city">
+  <h2>Paris </h2>
+  <p>Paris is well-known as the <span class="note">capital</span> of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo </h2>
+  <p>Tokyo is the <span class="note">capital</span> of Japan and a global tech hub.</p>
+</div>
+
+<div class="highlight">
+  <h2>Note</h2>
+  <p>Always double-check facts. For example, <span class="note">Sydney</span> is a major city but not the capital of Australia!</p>
+</div>
+
+<h2 class="city main">London </h2>
+<p class="city">London is the capital of England and has a rich history.</p>
+
+</body>
+</html>

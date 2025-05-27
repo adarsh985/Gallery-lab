@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salman Khan Dialogue Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Button to open the modal */
+    .open-modal-btn {
+      padding: 15px 30px;
+      background-color: #f39c12;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .open-modal-btn:hover {
+      background-color: #e67e22;
+    }
+
+    /* Modal (Hidden by default) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: auto;
+      padding-top: 60px;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      height: 300px;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    .close-btn {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close-btn:hover,
+    .close-btn:focus {
+      color: black;
+      text-decoration: none;
+    }
+
+    /* Style for the content */
+    .modal-content p {
+      font-size: 20px;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #c0392b;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to open the modal -->
+  <button class="open-modal-btn" onclick="openModal()">Click to Hear Salman Bhai's Dialogue</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Salman Khan's Dialogue</h2>
+      <p><strong>"Maine jo bola, wo kiya!"</strong></p>
+      <p>This is a tribute to Bhai's iconic dialogue. He doesn't just talk, he does it! 💪</p>
+      <p>Scroll down for more of the bhaigiri:</p>
+      <p>“Theek hai, main tumhe maar ke jata hoon.”</p>
+      <p>“Kuch log keh rahe hain, Bhai ki jaan le lo. Main keh raha hoon, unki jaan le lo.”</p>
+      <p>“Agar tum bahut accha kaam kar rahe ho, toh meri jaan lene ki koshish mat karo. Main tumhe zinda nahi chhodunga.”</p>
+    </div>
+  </div>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    // Close the modal when clicked outside the content area
+    window.onclick = function(event) {
+      if (event.target == document.getElementById("myModal")) {
+        closeModal();
+      }
+    }
+  </script>
+
+</body>
+</html>

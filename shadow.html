@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Bar (Group Selector for Buttons) */
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Main Content */
+        main {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        .about {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .skills ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .skills li {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Button Styles (Group Selector) */
+        .btn, .contact-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover, .contact-btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Card style for showcasing skills */
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #7f8c8d;
+        }
+
+        /* Child Selector: Direct children of .skills */
+        .skills > ul > li {
+            color: #2980b9;
+        }
+
+        /* Descendant Selector: All p tags inside a div */
+        div p {
+            color: #7f8c8d;
+        }
+
+        /* Sibling Selector: Paragraphs that follow h2 */
+        h2 + p {
+            font-size: 1rem;
+            color: #34495e;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm a passionate developer with an interest in web development. I love to create beautiful, functional websites and apps. I'm currently learning JavaScript and React to enhance my web development skills.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (Intermediate)</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+
+        <!-- Skills Cards Example -->
+        <section>
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>I design responsive, modern websites using HTML5, CSS3, and JavaScript.</p>
+            </div>
+        </section>
+
+        <button class="btn">Learn More</button>
+        <button class="contact-btn">Contact Me</button>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; 2025 - Adarsh Vimal Singh</p>
+    </footer>
+
+</body>
+</html>

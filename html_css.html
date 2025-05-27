@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML & CSS Basics - Adarsh</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f8f9fa, #ddeefc);
+      color: #333;
+      padding: 40px 15px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    h3 {
+      color: #0077b6;
+      margin-top: 35px;
+    }
+
+    p {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin: 10px 0;
+    }
+
+    code {
+      background-color: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    pre {
+      background-color: #f4f6f8;
+      padding: 12px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.95rem;
+    }
+
+    hr {
+      margin: 50px 0;
+      border: none;
+      height: 2px;
+      background-color: #61a5c2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🧠 HTML & CSS Basics</h1>
+    <h2>Practical Q&A - 25th April 2025</h2>
+
+    <hr>
+
+    <h3>📄 HTML Section</h3>
+
+    <p><strong>Q1:</strong> The <code>&lt;head&gt;</code> tag is used to include things that aren’t visible on the page, like the title, links to CSS, meta data etc. It helps in setting up the page properly.</p>
+
+    <p><strong>Q2:</strong> To create a hyperlink in HTML, we use the <code>&lt;a&gt;</code> tag with an <code>href</code> attribute. <br>
+    Example:
+    <pre><code>&lt;a href="https://google.com"&gt;Visit Google&lt;/a&gt;</code></pre></p>
+
+    <p><strong>Q3:</strong> The <code>&lt;img&gt;</code> tag is used to add images. It requires the <code>src</code> and <code>alt</code> attributes.</p>
+
+    <p><strong>Q4:</strong> <code>&lt;div&gt;</code> is a block element used to group content. <code>&lt;span&gt;</code> is inline and used for styling small portions of text.</p>
+
+    <p><strong>Q5:</strong> We use <code>&lt;ul&gt;</code> for unordered lists and <code>&lt;ol&gt;</code> for ordered lists.
+    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+  &lt;li&gt;Eggs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</code></pre></p>
+
+    <p><strong>Q6:</strong> To open a link in a new tab, use <code>target="_blank"</code> in the anchor tag.
+    <pre><code>&lt;a href="https://openai.com" target="_blank"&gt;OpenAI&lt;/a&gt;</code></pre></p>
+
+    <p><strong>Q7:</strong> To create a table, use <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> tags.
+    <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Adarsh&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre></p>
+
+    <p><strong>Q8:</strong> The <code>alt</code> attribute gives alternate text for images — useful if image fails to load or for screen readers.</p>
+
+    <p><strong>Q9:</strong> Internal CSS is written inside the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.
+    <pre><code>&lt;style&gt;
+  body {
+    background-color: lightyellow;
+  }
+&lt;/style&gt;</code></pre></p>
+
+    <hr>
+
+    <h3>🎨 CSS Section</h3>
+
+    <p><strong>Q1:</strong> CSS means Cascading Style Sheets. It's used to style the HTML elements — like colors, layout, fonts, spacing, etc.</p>
+
+    <p><strong>Q2:</strong> You can write internal CSS like this:
+    <pre><code>&lt;style&gt;
+  h1 {
+    color: darkblue;
+  }
+&lt;/style&gt;</code></pre></p>
+
+    <p><strong>Q3:</strong> 
+      - Inline CSS: written inside the tag using <code>style</code> attribute. <br>
+      - Internal CSS: inside <code>&lt;style&gt;</code> in HTML. <br>
+      - External CSS: linked from a separate file like <code>style.css</code>.
+    </p>
+
+    <p><strong>Q4:</strong> Use <code>background-color</code> to change page color.
+    <pre><code>body {
+  background-color: #f0f0f0;
+}</code></pre></p>
+
+    <p><strong>Q5:</strong> Font size is controlled using <code>font-size</code> property.
+    <pre><code>p {
+  font-size: 18px;
+}</code></pre></p>
+
+    <p><strong>Q6:</strong> <code>margin</code> gives space outside the element, <code>padding</code> gives space inside the border of an element.</p>
+
+    <p><strong>Q7:</strong> You can add a border like this:
+    <pre><code>div {
+  border: 2px solid gray;
+}</code></pre></p>
+
+    <p><strong>Q8:</strong> CSS is used to improve how your HTML looks — better layout, colors, fonts, spacing — basically, make it user-friendly and visually clean.</p>
+  </div>
+</body>
+</html>
